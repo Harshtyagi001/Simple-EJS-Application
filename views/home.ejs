@@ -1,0 +1,10 @@
+<%- include partials/header %>
+
+<h1><%=Title%></h1>
+<p><%=para%></p>
+<%arr.forEach(function(x){%>
+  <h1><%=x.inputText %></h1>
+  <p><%= x.bodyText.substring(0,100)+"..." %> <a href="/posts/<%=x.inputText%>">Read More</a></p>
+<%})%>
+
+<%- include("partials/footer") %>
